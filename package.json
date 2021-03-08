@@ -52,17 +52,29 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/register": "^7.10.5",
     "@istanbuljs/nyc-config-babel": "^3.0.0",
-    "babel-eslint": "^10.1.0",
     "babel-plugin-istanbul": "^6.0.0",
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
     "cross-env": "^7.0.2",
-    "eslint": "^7.6.0",
-    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint": "^7.21.0",
+    "eslint-config-personal": "github:olsonpm/eslint-config-personal",
     "eslint-plugin-import": "^2.22.0",
     "mocha": "^8.1.1",
     "nyc": "^15.1.0",
+    "prettier": "^2.2.1",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0"
+  },
+  "eslintConfig": {
+    "extends": "personal",
+    "env": {
+      "mocha": true
+    }
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }

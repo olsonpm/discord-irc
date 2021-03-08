@@ -1,12 +1,12 @@
-import chai from 'chai';
-import { ConfigurationError } from '../lib/errors';
+import chai from 'chai'
+import { ConfigurationError } from '../lib/errors'
 
-chai.should();
+chai.should()
 
 describe('Errors', () => {
   it('should have a configuration error', () => {
-    const error = new ConfigurationError();
-    error.message.should.equal('Invalid configuration file given');
-    error.should.be.an.instanceof(Error);
-  });
-});
+    const error = new ConfigurationError()
+    error.message.should.equal('Invalid configuration file given')
+    error.should.be.an.instanceof(Error)
+  })
+})
